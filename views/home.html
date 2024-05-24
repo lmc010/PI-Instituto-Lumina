@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <div class="itens">
+                <button class="itemOne">Vestibular</button>
+                <button class="itemTwo">Secretaria</button>
+                <button class="itemThree">Unidades</button>
+                <button class="itemFour">Acessar</button> 
+            </div>
+
+
+
+         <div class="boxMenu">
+            <input type="checkbox" id="check">
+          <div class="menuIcon">       
+            <label for="check">
+              <img src="{{url_for('static', filename='imgs/icon_menu.svg')}}">
+            </label> 
+          </div>
+
+          <nav class="sidebarMenu">     
+            <img class="logo" src="{{url_for('static', filename='imgs/logo(2).svg')}}">
+           <ul>
+              <li>
+                  <a class="home" href="#">Home</a>
+              </li>
+              <li>
+                  <a class="funcionalidades" href="#">Funcionalidades</a>
+              </li>
+              <li>
+                  <a class="noticias" href="#">Noticias</a>
+              </li>
+              <li>
+                  <a class="eventos" href="#">Eventos</a>
+              </li>
+              <li>
+                  <a class="empresas" href="#">Para Empresas</a>
+              </li>
+              <li>
+                  <a class="logout" href="#">Fazer Logout</a>
+              </li>
+
+              <hr>
+              <div class="langs">
+                <button><a href="#" language="portuguese" class="active">PT</a></button>
+                <button><a href="#" language="english">ENG</a></button>
+              </div> 
+              <hr>
+              
+              <div class="close">
+                <label for="check">
+                   <img src="{{url_for('static', filename='imgs/icon_Exit.svg')}}">
+                </label>
+               </div>
+              
+             </ul>
+             
+           </nav>
+          </div>
+        </div>
+    </nav>
+
+    <div class="sectionBackground">
+        <img src="{{url_for('static', filename='imgs/background.svg')}}" class="background">
+        <img src="{{url_for('static', filename='imgs/logo(2).svg')}}" class="logoBackground">
+        <h1 class="lumina">Instituto Lumina</h1>
+    </div>
+
+    <br>
+    <br>
+    <div class="about">
+        <h1 class="abouth1">Sobre Nós</h1>
+        <h2 class="abouth2">Sobre Nós</h2>
+        <h3 class="abouth3">Somos um facilitador</h3>
+        <p class="aboutp">A Instituto Lumina
+            oferece cursos modernos nas áreas de programação, cibersegurança, 
+            e desenvolvimento de software. Contamos com docentes especializados e 
+            laboratórios de última geração. Nosso foco é proporcionar uma educação prática e 
+            alinhada às demandas do mercado. Venha fazer parte do futuro da tecnologia!
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="sectionContato">
+        <div>
+          <h1 class="contatoh1">Contato</h1>
+          <h2 class="contatoh2">Contato</h2>
+          <p class="contatop1">Se estiver com alguma duvida ou interesse comercial não </p>
+          <p class="p2">hesite em nos contatar</p>
+        </div>
+        <br>
+        <div>
+            <input class="inputName" type="text" id="name"  placeholder="Nome">
+            <br>
+            <br>
+            <input class="inputEmail" type="email" id="email"  placeholder="Email">
+            <br>
+            <br>
+            <input class="inputAssunto" type="text" id="assunto"  placeholder="Assunto">
+            <br>
+            <br>
+            <input class="inputMensagem" type="text" id="mensagem"  placeholder="Digite aqui sua mensagem">
+            <br>
+            <br>
+            <button class="enviar">Enviar</button>
+        </div>
+    </div>
+    
+
+    
+
+    <footer>
+        <div>
+          <img src="{{url_for('static', filename='imgs/logo.svg')}}"></img>
+        </div>
+        <div class="footerList">
+              <h3 class="footerh3">Quer Saber Mais ?</h3>
+              <p class="footerp1" href="#">Quem Somos</p>
+              <p class="footerp2" href="#">Contato</p>
+              <p class="footerp3" href="#">Empresas Afiliadas</p>
+              <p class="footerp4" href="#">Politica de Privacidade</p>        
+        </div>
+        <div class="footerIcons">
+            
+            <div>
+                <h3 class="redes">Nossas Redes</h3>
+              <img src="{{url_for('static', filename='imgs/icon_facebook.svg')}}" class="facebook"></img>
+              <img src="{{url_for('static', filename='imgs/icon_whatsapp.svg')}}" class="whatsapp"></img>
+            </div>
+            <div>
+               <img src="{{url_for('static', filename='imgs/icon_instagram.svg')}}" class="instagram" ></img>
+               <img src="{{url_for('static', filename='imgs/icon_youtube.svg')}}" class="youtube"></img>
+            </div>
+            <div>
+                <h2 class="telefone">Telefone</h2>
+                <p>(XX) - XXXXX - XXXX</p>
+                <img src="{{url_for('static', filename='imgs/telephone.svg')}}" class="telephone" ></img>
+                <h1 class="copyright">© 2024 Instituto Lumina, Inc</h1>
+            </div>
+        
+        </div>
+    </footer>
+
+    <script>
+        let langs = document.querySelector(".langs"),
+            link = document.querySelectorAll("a")
+            vestibular = document.querySelector(".itemOne")
+            secretaria = document.querySelector(".itemTwo")
+            unidades = document.querySelector(".itemThree")
+            acessar = document.querySelector(".itemFour")
+            instituto = document.querySelector(".lumina")
+            sobre = document.querySelector(".abouth1")
+            sobrenos = document.querySelector(".abouth2")
+            facilitador = document.querySelector( ".abouth3")
+            apresentacao = document.querySelector( ".aboutp")
+            funcionalidades = document.querySelector( ".funcionalidades")
+            noticias = document.querySelector( ".noticias")
+            eventos = document.querySelector( ".eventos")
+            empresas = document.querySelector( ".empresas")
+            logout = document.querySelector( ".logout")
+            contato = document.querySelector( ".contatoh1")
+            contatoTwo = document.querySelector( ".contatoh2")
+            contatoThree = document.querySelector( ".contatop1")
+            contatoFour = document.querySelector( ".contatop2")
+            enviar = document.querySelector( ".enviar")
+            placeholder = document.querySelector( ".inputName")
+            footer = document.querySelector( ".footerh3")
+            footerTwo = document.querySelector( ".footerp1")
+            footerThree = document.querySelector( ".footerp2")
+            footerFour = document.querySelector( ".footerp3")
+            footerFive = document.querySelector( ".footerp4")
+            footerSix = document.querySelector( ".redes")
+            footerSeven = document.querySelector( ".telefone")
+            footerEight = document.querySelector( ".copyright")
+            
+
+        
+            link.forEach(el=>{
+            el.addEventListener("click", ()=>{
+                langs.querySelector(".active").classList.remove("active")
+                el.classList.add("active")
+        
+                let attr = el.getAttribute("language")
+
+                vestibular.textContent = data[attr].vestibular
+                secretaria.textContent = data[attr].secretaria
+                unidades.textContent = data[attr].unidades
+                acessar.textContent = data[attr].acessar
+                instituto.textContent = data[attr].instituto
+                sobre.textContent = data[attr].sobre
+                sobrenos.textContent = data[attr].sobrenos
+                facilitador.textContent = data[attr].facilitador
+                apresentacao.textContent = data[attr].apresentacao
+                funcionalidades.textContent = data[attr].funcionalidades
+                noticias.textContent = data[attr].noticias
+                eventos.textContent = data[attr].eventos
+                empresas.textContent = data[attr].empresas
+                logout.textContent = data[attr].logout
+                contato.textContent = data[attr].contato
+                contatoTwo.textContent = data[attr].contatoTwo
+                contatoThree.textContent = data[attr].contatoThree
+                contatoFour.textContent = data[attr].contatoFour
+                footer.textContent = data[attr].footer  
+                footerTwo.textContent = data[attr].footerTwo  
+                footerThree.textContent = data[attr].footerThree  
+                footerFour.textContent = data[attr].footerFour  
+                footerFive.textContent = data[attr].footerFive  
+                footerSix.textContent = data[attr].footerSix    
+                footerSeven.textContent = data[attr].footerSeven   
+                footerEight.textContent = data[attr].footerEight   
+                enviar.textContent = data[attr].enviar       
+
+            })
+        })
+        
+        
+        let data ={
+            portuguese:{
+                vestibular:"Vestibular",
+                secretaria:"Secretaria",
+                unidades:"Unidades",
+                acessar:"Acessar",
+                instituto:"Instituto Lumina",
+                sobre:"Sobre Nós",
+                sobrenos:"Sobre Nós",
+                facilitador:"Somos um facilitador",
+                apresentacao:"A Instituto Lumina oferece cursos modernos nas áreas de programação, cibersegurança, e desenvolvimento de software. Contamos com docentes especializados e laboratórios de última geração. Nosso foco é proporcionar uma educação prática e alinhada às demandas do mercado. Venha fazer parte do futuro da tecnologia!",
+                funcionalidades: "Funcionalidades",
+                noticias: "Noticias",
+                eventos: "Eventos",
+                empresas: "Empresas",
+                logout:"Fazer Logout",
+                contato:"Contato",
+                contatoTwo:"Contato",
+                contatoThree:"Se estiver com alguma duvida ou interesse comercial não",
+                contatoFour:"hesite em nos contatar",
+                enviar:"Enviar",
+                placeholder:"Nome",
+                footer: "Quer Saber Mais?",
+                footerTwo: "Quer Somos",
+                footerThree: "Contato",
+                footerFour: "Empresas Afiliadas",
+                footerFive: "Politica de Privacidade",
+                footerSix: "Nossas Redes",
+                footerSeven: "Telefone",
+                footerEight: "© 2024 Instituto Lumina, Inc",    
+            },
+            english:{
+                vestibular:"Entrance Exam",
+                secretaria:"Secretary",
+                unidades:"Units",
+                acessar:"Access",
+                instituto:"Lumina Institute",
+                sobre:"About Us",
+                sobrenos:"About Us",
+                facilitador:"We are a facilitator",
+                apresentacao:"Instituto Lumina offers modern courses in the areas of programming, cybersecurity, and software development. We have specialized teachers and state-of-the-art laboratories. Our focus is to provide practical education aligned with market demands. Come and be part of the future of technology!",
+                funcionalidades: "Functionalities",
+                noticias: "News",
+                eventos: "Events",
+                empresas: "Companies",
+                logout:"Logout",
+                contato:"Contact",
+                contatoTwo:"Contact",
+                contatoThree:"If you have any doubts or commercial interest, do not",
+                contatoFour:"hesitate to contact us",
+                enviar:"Enviar",
+                footer:"Want to know more?",
+                footerTwo:"Who we are",
+                footerThree:"Contact",
+                footerFour:"Affiliated Companies",
+                footerFive:"Privacy Policy",
+                footerSix:"Our Networks",
+                footerSeven:"Telephone",
+                footerEight:"© 2024 Lumina Institute, Inc",
+            }
+        }
+        
+        
+            </script> 
+</body>
+</html>

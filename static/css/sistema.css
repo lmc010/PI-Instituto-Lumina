@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    width: 1289px;
+    height: 100px;
+    background-color: #EC7000;
+    border-bottom: 2px solid #003399;
+    margin-left: -17px;
+    margin-top: 90px;
+}
+
+.logo img{
+    width: 280px;
+    height: 75px;
+    padding-top: 10px;
+    padding-left: 17px;
+}
+
+.langs{
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 950px;  
+    margin-top: -65px;
+    padding: 20px;
+    width: 100px;
+}
+
+.langs button{
+    width: 40px;
+    height: 25px;
+    margin-left: -1px;
+
+}
+
+
+.langs a{
+    color: #EC7000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+a:active{
+    background: #f0bc8f;
+}
+
+
+.logo img{
+    width: 280px;
+    height: 75px;
+    margin-top: -90px;
+    margin-left: 0px;
+}
+
+.sidebarMenu{
+    width: 250px;
+    height: 490px;
+    border-right: 2px solid #003399;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -30px; 
+}
+
+
+
+li a{
+    font-size: 16px;
+    width: 215px;
+    text-decoration: none;
+    color:#003399 
+}
+
+
+img{
+    margin-top:50px ;
+    width: 30PX;
+    display: flex;
+    flex: row wrap;
+}
+
+a{
+    margin-top: -20px;
+    margin-left: 35px;
+    display: flex;
+    flex: row wrap;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.inicio{
+    margin-top: -15px
+}
+
+.acesso{
+    margin-top: -15px;
+}
+
+
+
+
+.cardOne{
+    border: 2px solid #003399;
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    margin-top: -420px;
+    margin-left: 350px;
+}
+
+
+.cardOne:hover{
+    transform: scale(1.1);
+    transition: ease 1s;  
+}
+
+.elipseOne{
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.iconOne{
+    width: 200px;
+    margin-top: -260px;
+    margin-left: 80px;
+}
+
+p{
+    margin-left: 70px;
+    font-weight: bold;
+    margin-top: 80px;
+    color:#003399 ;
+    cursor:pointer;
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.cardTwo{
+    border: 2px solid #003399;
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    margin-top: -350px;
+    margin-left: 800px;
+}
+
+
+.cardTwo:hover{
+    transform: scale(1.1);
+    transition: ease 1s;  
+}
+
+.elipseTwo{
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.iconTwo{
+    width: 180px;
+    margin-top: -200px;
+    margin-left: 80px;
+}
+
+.p2{
+    margin-left: 90px;
+    font-weight: bold;
+    margin-top: 65px;
+    color:#003399 ;
+    cursor:pointer;
+}
+
+.p2:hover{
+    text-decoration: underline;
+}
+
+.p3{
+    margin-left: 105px;
+    font-weight: bold;
+    margin-top: -15px;
+    color:#003399 ;
+    cursor:pointer;
+}
+
+.p3:hover{
+    text-decoration: underline;
+}

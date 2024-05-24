@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    width: 1289px;
+    height: 100px;
+    background-color: #EC7000;
+    border-bottom: 2px solid #003399;
+    margin-top: -50px;
+    margin-left: -17px;
+}
+
+.logo img{
+    width: 280px;
+    height: 75px;
+    padding-top: 10px;
+    margin-left: 17px;
+}
+
+.langs{
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 950px;  
+    margin-top: -65px;
+    padding: 20px;
+    width: 100px;
+}
+
+.langs button{
+    width: 40px;
+    height: 25px;
+    margin-left: -1px;
+
+}
+
+
+.langs a{
+    color: #EC7000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+a:active{
+    background: #f0bc8f;
+}
+
+
+
+.sidebarMenu{
+    width: 280px;
+    height: 487px;
+    border-right: 2px solid #003399;
+}
+
+
+
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -35px; 
+}
+
+
+
+li a{
+    font-size: 16px;
+    width: 215px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:#003399 
+}
+
+
+img{
+    margin-top:50px ;
+    width: 30PX;
+    display: flex;
+    flex: row wrap;
+}
+
+a{
+    margin-top: -20px;
+    margin-left: 35px;
+    display: flex;
+    flex: row wrap;
+}
+
+
+.adm{
+    margin-left: 450px;
+    margin-top: -400px;
+}
+
+h3{
+    font-weight:normal;
+}
+
+.adm div{
+    background-color: #f0bc8f;
+    padding: 10px;
+}
+
+div p{
+    margin-left: 20px;
+    color: #003399;
+}
+
+.adm div p{
+    color: #003399;
+}

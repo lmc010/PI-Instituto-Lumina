@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin.css')}}">
+    <title>Painel do Administrador</title>
+</head>
+<body>
+    <nav>
+     <div class="logo">
+        <img src="{{url_for('static', filename='imgs/logo.svg')}}">   
+     </div>
+    
+      <div class="langs">
+        <button><a href="#" language="portuguese" class="active">PT</a></button>
+        <button><a href="#" language="english">ENG</a></button>
+     </div>  
+     </nav>
+
+    <div class="sidebarMenu">
+        <br>
+       <ul>
+          <li>
+              <img src="{{url_for('static', filename='imgs/students.svg')}}">
+              <a class="alunos" href="#">GERENCIAR ALUNOS</a>
+          </li>
+          <li>
+              <img src="{{url_for('static', filename='imgs/teacher.svg')}}">
+              <a class="professores" href="#">GERENCIAR PROFESSORES</a>
+          </li>
+          <li>
+              <img src="{{url_for('static', filename='imgs/books.svg')}}">
+              <a class="disciplinas" href="#">GERENCIAR DISCPLINAS</a>
+          </li>
+          <li>
+            <img src="{{url_for('static', filename='imgs/logout.svg')}}">
+            <a href="{{url_for('login')}}" class="logout">FAZER LOGOUT</a>
+        </li>
+    </div>
+    
+    <div class="adm">
+        <h3 class="bemvindo">Bem Vindo!!</h3>
+        <div>
+            <p class="ola">Olá Fulano Ciclano Beltrano</p>
+        </div>
+        <p class="frase">Você está conectado no módulo Sistema de administração de graduação</p>
+    </div>
+
+    <script>
+    let langs = document.querySelector(".langs"),
+    link = document.querySelectorAll("a")
+    bemvindo = document.querySelector(".bemvindo")
+    ola = document.querySelector(".ola")
+    alunos = document.querySelector(".alunos")
+    professores = document.querySelector(".professores")
+    disciplinas = document.querySelector(".disciplinas")
+    logout  = document.querySelector(".logout")
+    frase = document.querySelector(".frase")
+    
+
+    link.forEach(el=>{
+    el.addEventListener("click", ()=>{
+        langs.querySelector(".active").classList.remove("active")
+        el.classList.add("active")
+
+        let attr = el.getAttribute("language")
+
+        bemvindo.textContent = data[attr].bemvindo
+        alunos.textContent = data[attr].alunos
+        professores.textContent = data[attr].professores
+        disciplinas.textContent = data[attr].disciplinas
+        disciplinas.textContent = data[attr].disciplinas
+        logout.textContent = data[attr].logout
+        frase.textContent = data[attr].frase
+        ola.textContent = data[attr].ola
+        
+    })
+})
+
+
+let data ={
+    portuguese:{
+        bemvindo: "Bem Vindo!!",
+        alunos:"GERENCIAR ALUNOS",
+        professores: "GERENCIAR PROFESSORES",
+        disciplinas: "GERENCIAR DISCPLINAS",
+        logout:"FAZER LOGOUT",
+        ola:"Olá Fulano Ciclano Beltrano",
+        frase:"Você está conectado no módulo Sistema de graduação",
+    },
+    english:{
+        bemvindo: "Welcome!!",
+        alunos:"MANAGE STUDENTS",
+        professores: "MANAGE TEACHER",
+        disciplinas:"MANAGE SUBJECTS",
+        logout:"LOGOUT",
+        ola:"Hello Fulano Ciclano Beltrano",
+        frase:"You are logged in to the Grading System module"
+    }
+}
+
+
+    </script> 
+
+
+        
+
+</body>
+</html>
