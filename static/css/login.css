@@ -39,10 +39,10 @@ body{
     font-size: 15px;
 }
 
-a:active{
-    background: #f0bc8f;
-    font-size: 10px;
+.active{
+    margin-top: -10px;
 }
+
 
 .langs .pt{
     margin-left: -150px;

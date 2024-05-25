@@ -9,7 +9,7 @@
 <body>
 
 <div class="orange">
-    <img src="{{url_for('static', filename='imgs/logo(2).svg')}}" class="logo">
+    <img src="{{url_for('static', filename='imgs/logo.svg')}}" class="logo">
     <h1 class="h1">Instituto Lumina</h1>
 </div>
 
@@ -20,15 +20,15 @@
         <br>
         <div>
            <label for="usuario" >   
-              <img class="user" src="{{url_for('static', filename='imgs/user.svg')}}">   
+              <img class="user" src="{{url_for('static', filename='imgs/Icon_User.svg')}}">   
           </label>
-          <input class="inputIdentificacao" type="usuario" id="usuario" placeholder="Identificação XXXXXX">    
+          <input type="usuario" id="usuario" placeholder="Identificação XXXXXX">    
         </div>
         <br>
         <div>
            <label for="senha">
-               <img class="lock" src="{{url_for('static', filename='imgs/lock.svg')}}">
-               <input class="inputSenha" type="password" id="senha" placeholder="Senha">
+               <img class="lock" src="{{url_for('static', filename='imgs/Icon_Lock.svg')}}">
+               <input  type="password" id="senha" placeholder="Senha">
             </label>
         </div>
         <br>
@@ -49,68 +49,9 @@
     <button ><a href="#" language="english">ENG</a></button>
 </div>
 
-
-
-
-
-    <script>
-let langs = document.querySelector(".langs"),
-    link = document.querySelectorAll("a")
-    login = document.querySelector(".login")
-    entrar = document.querySelector(".entrar")
-    cadastro = document.querySelector(".p1")
-    identificacao = document.querySelector(".p2")
-    senha = document.querySelector(".p3")
-    lumina = document.querySelector(".h1")
-    inputOne = document.querySelector(".inputIdentificacao")
-    inputTwo = document.querySelector(".inputSenha")
-
-    link.forEach(el=>{
-    el.addEventListener("click", ()=>{
-        langs.querySelector(".active").classList.remove("active")
-        el.classList.add("active")
-
-        let attr = el.getAttribute("language")
-
-        login.textContent = data[attr].login
-        entrar.textContent = data[attr].entrar
-        cadastro.textContent = data[attr].cadastro
-        identificacao.textContent = data[attr].identificacao
-        senha.textContent = data[attr].senha
-        lumina.textContent = data[attr].lumina
-        inputOne.textContent = data[attr].inputOne
-        inputTwo.textContent = data[attr].inputTwo
-    })
-})
-
-
-let data ={
-    portuguese:{
-
-        lumina: "Instituto Lumina",
-        login:"Faça o Login Para Continuar",
-        entrar:"ENTRAR",
-        cadastro:"Fazer Cadastro",
-        identificacao:"Esqueceu a Identificação?",
-        senha:"Esqueceu a Senha?",
-        inputOne:"Identification XXXXXX",
-        inputTwo:"Senha"
-    },
-    english:{
-        
-        lumina: "Lumina Institute",
-        login:"Log in to continue",
-        entrar:"ENTER",
-        cadastro:"Sign up",
-        identificacao:"Forgot Identification?",
-        senha:"Frogot Password?",
-        inputOne:"Identification XXXXXX",
-        inputTwo:"Password"
-    }
-}
-        
-    </script> 
 </body>
+
+<script src="{{url_for('static', filename='js/login.js')}}"></script>
 </html>
 
 

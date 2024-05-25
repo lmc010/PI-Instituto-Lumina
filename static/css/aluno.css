@@ -36,6 +36,8 @@ nav{
     width: 40px;
     height: 25px;
     margin-left: -1px;
+    border-radius: 10px;
+    border: 1px solid #EC7000
 
 }
 
@@ -45,11 +47,12 @@ nav{
     font-weight: bold;
     text-decoration: none;
     margin-top: 5px;
-    margin-left: -1px;
+    margin-left: 3px;
 }
 
-a:active{
-    background: #f0bc8f;
+
+.langs .english{
+    margin-left: -1px;
 }
 
 
@@ -81,6 +84,10 @@ li a{
     margin-left: 40px;
     text-decoration: none;
     color:#003399 
+}
+
+li a:hover{
+    text-decoration: underline;
 }
 
 

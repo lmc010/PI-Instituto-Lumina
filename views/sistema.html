@@ -14,7 +14,7 @@
      
         <div class="langs">
             <button><a href="#" language="portuguese" class="active">PT</a></button>
-            <button><a href="#" language="english">ENG</a></button>
+            <button><a href="#" language="english" class="english">ENG</a></button>
         </div> 
     </nav>
 
@@ -23,23 +23,23 @@
         <br>
        <ul>
           <li>
-              <img src="{{url_for('static', filename='imgs/home.svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Home.svg')}}">
               <a class="inicio" href="Login.html">INICIO</a>
           </li>
           <li>
-              <img src="{{url_for('static', filename='imgs/key.svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Key.svg')}}">
               <a class="acesso" href="Perfil.html">SOLICITAR ACESSO</a>
           </li>
           <li>
-              <img src="{{url_for('static', filename='imgs/lock(2).svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Lock(2).svg')}}">
               <a class="senha" href="#">ALTERAR SENHA</a>
           </li>
           <li>
-              <img class="email" src="{{url_for('static', filename='imgs/email.svg')}}">
+              <img class="email" src="{{url_for('static', filename='imgs/Icon_Email.svg')}}">
               <a class="alterarEmail" href="#">ALTERAR EMAIL</a>
           </li>
           <li>
-             <img src="{{url_for('static', filename='imgs/handshake.svg')}}">
+             <img src="{{url_for('static', filename='imgs/Icon_handshake.svg')}}">
               <a class="faleconosco" href="#">FALE CONOSCO</a>
           </li>                         
          </ul>
@@ -59,70 +59,12 @@
             <div class="sistema">
                 <img class="elipseTwo" src="{{url_for('static', filename='imgs/Ellipse.svg')}}">
                 <img class="iconTwo" src="{{url_for('static', filename='imgs/Vector.svg')}}">
-                <p class="p2">SISTEMA DOCENTE E<br><p class="p3">ADMINISTATIVO</p></p>
+                <p class="p2">SISTEMA DOCENTE</p>
              </div>                  
         </div>
     <div>
 
         
-   
-    <script>
-        let langs = document.querySelector(".langs"),
-            link = document.querySelectorAll("a")
-            inicio = document.querySelector(".inicio")
-            acesso = document.querySelector(".acesso")
-            senha = document.querySelector(".senha")
-            email = document.querySelector(".alterarEmail")
-            faleconosco = document.querySelector(".faleconosco")
-            graduacao = document.querySelector(".graduacao")
-            sistemaDocente = document.querySelector(".p2")
-            sistemaAdminstrativo = document.querySelector( ".p3")
-
-        
-            link.forEach(el=>{
-            el.addEventListener("click", ()=>{
-                langs.querySelector(".active").classList.remove("active")
-                el.classList.add("active")
-        
-                let attr = el.getAttribute("language")
-
-                inicio.textContent = data[attr].inicio
-                acesso.textContent = data[attr].acesso
-                senha.textContent = data[attr].senha
-                email.textContent = data[attr].email
-                faleconosco.textContent = data[attr].faleconosco
-                graduacao.textContent = data[attr].graduacao
-                sistemaDocente.textContent = data[attr].sistemaDocente
-                sistemaAdminstrativo = data[attr].sistemaAdminstrativo
-            })
-        })
-        
-        
-        let data ={
-            portuguese:{
-                inicio:"INICIO",
-                acesso:"ACESSO",
-                senha:"MUDAR SENHA",
-                email:"MUDAR EMAIL",
-                faleconosco:"FALECONOSCO",
-                graduacao:"SISTEMA DE GRADUAÇÃO",
-                sistemaDocente:"SISTEMA DOCENTE E",
-                sistemaAdminstrativo:"ADMINISTATIVO",
-            },
-            english:{
-                inicio:"START",
-                acesso:"ACCESS",
-                senha:"CHANGE PASSWORD",
-                email:"CHANGE EMAIL",
-                faleconosco:"CONTACT US",
-                graduacao:"GRADUAÇÃO SYSTEM",
-                sistemaDocente:"TEACHING SYSTEM AND",
-                sistemaAdminstrativo:"ADMINISTRATIVE",
-            }
-        }
-        
-        
-            </script> 
-
 </body>
+     <script src="{{url_for('static', filename='js/sistema.js')}}"></script>
 </html>

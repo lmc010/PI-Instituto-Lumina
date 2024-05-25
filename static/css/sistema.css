@@ -36,6 +36,8 @@ nav{
     width: 40px;
     height: 25px;
     margin-left: -1px;
+    border-radius: 10px;
+    border: 1px solid #EC7000
 
 }
 
@@ -45,11 +47,11 @@ nav{
     font-weight: bold;
     text-decoration: none;
     margin-top: 5px;
-    margin-left: -1px;
+    margin-left:3px;
 }
 
-a:active{
-    background: #f0bc8f;
+.langs .english{
+    margin-left: -1px;
 }
 
 
@@ -189,17 +191,5 @@ p:hover{
 }
 
 .p2:hover{
-    text-decoration: underline;
-}
-
-.p3{
-    margin-left: 105px;
-    font-weight: bold;
-    margin-top: -15px;
-    color:#003399 ;
-    cursor:pointer;
-}
-
-.p3:hover{
     text-decoration: underline;
 }

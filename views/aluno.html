@@ -14,7 +14,7 @@
        
          <div class="langs">
            <button><a href="#" language="portuguese" class="active">PT</a></button>
-           <button><a href="#" language="english">ENG</a></button>
+           <button><a href="#" language="english" class="english">ENG</a></button>
         </div>  
     </nav>
 
@@ -25,28 +25,28 @@
         <br>
        <ul>
           <li>
-              <img src="{{url_for('static', filename='imgs/data.svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Data.svg')}}">
               <a class="dados" href="Login.html">MEUS DADOS</a>
           </li>
           <li>
-              <img src="{{url_for('static', filename='imgs/lupa.svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Lupa.svg')}}">
               <a class="consultas" href="Perfil.html">CONSULTAS</a>
           </li>
           <li>
-              <img src="{{url_for('static', filename='imgs/email.svg')}}">
+              <img src="{{url_for('static', filename='imgs/Icon_Email.svg')}}">
               <a class="mensagens" href="#">MENSAGENS</a>
           </li>
           <li>
-              <img class="email" src="{{url_for('static', filename='imgs/user.svg')}}">
+              <img class="email" src="{{url_for('static', filename='imgs/Icon_user.svg')}}">
               <a class="alterar" href="#">ALTERAR PERFIL</a>
           </li>
           <li>
-             <img src="{{url_for('static', filename='imgs/central.svg')}}">
-              <a class="retomar" href="#">RETOMAR A CENTRAL</a>
+             <img src="{{url_for('static', filename='imgs/Icon_Building.svg')}}">
+              <a class="retomar" href="{{url_for('home')}}">RETOMAR A HOMEPAGE</a>
           </li>
           <li>
-            <img src="{{url_for('static', filename='imgs/logout.svg')}}">
-             <a href="{{url_for('login')}}" class="logout">FAZER LOGOUT</a>
+            <img src="{{url_for('static', filename='imgs/Icon_Logout.svg')}}">
+             <a class="logout" href="{{url_for('login')}}">FAZER LOGOUT</a>
          </li>                           
          </ul>
     </div>
@@ -54,71 +54,11 @@
     <div class="aluno">
         <h3 class="bemvindo">Bem Vindo!!</h3>
         <div>
-            <p class="ola">Olá Fulano ciclano Beltrano</p>
+            <p class="ola">Olá Usuário</p>
         </div>
         <p class="frase">Você está conectado no módulo Sistema de graduação</p>
     </div>
 
-
-    <script>
-let langs = document.querySelector(".langs"),
-    link = document.querySelectorAll("a")
-    bemvindo = document.querySelector(".bemvindo")
-    dados = document.querySelector(".dados")
-    consultas = document.querySelector(".consultas")
-    mensagens = document.querySelector(".mensagens")
-    alterar = document.querySelector(".alterar")
-    retomar = document.querySelector(".retomar")
-    logout = document.querySelector(".logout")
-    frase = document.querySelector(".frase")
-    ola = document.querySelector(".ola")
-
-    link.forEach(el=>{
-    el.addEventListener("click", ()=>{
-        langs.querySelector(".active").classList.remove("active")
-        el.classList.add("active")
-
-        let attr = el.getAttribute("language")
-
-        bemvindo.textContent = data[attr].bemvindo
-        dados.textContent = data[attr].dados
-        consultas.textContent = data[attr].consultas
-        mensagens.textContent = data[attr].mensagens
-        alterar.textContent = data[attr].alterar
-        retomar.textContent = data[attr].retomar
-        logout.textContent = data[attr].logout
-        frase.textContent = data[attr].frase
-        ola.textContent = data[attr].ola
-    })
-})
-
-
-let data ={
-    portuguese:{
-        bemvindo: "Bem Vindo!!",
-        dados: "MEUS DADOS",
-        consultas: "CONSULTAS",
-        mensagens: "MENSAGENS",
-        alterar:"ALTERAR",
-        retomar:"RETORNAR A CENTRAL",
-        logout:"FAZER LOGOUT",
-        frase:"Você está conectado no módulo Sistema de graduação",
-        ola:"Olá Fulano ciclano Beltrano",
-    },
-    english:{
-        bemvindo: "Welcome!!",
-        dados: "MY DATA",
-        consultas: "QUERIES",
-        mensagens: "MESSAGE",
-        alterar:"CHANGE PROFILE",
-        retomar:"RETURN TO CENTER",
-        logout:"LOGOUT",
-        frase:"You are logged in to the Grading System module",
-        ola:"Hello Fulano ciclano Beltrano",
-    }
-}
-
-
-    </script> 
 </body>
+    <script src="{{url_for('static', filename='js/aluno.js')}}"></script>
 </html>

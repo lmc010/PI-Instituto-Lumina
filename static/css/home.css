@@ -14,7 +14,7 @@ body{
 nav{
     font-family: "Work Sans", sans-serif;
     width: 1265px;
-    height: 100px;
+    height: 105px;
     background-color: #EC7000;
     margin-top:-10px ;
     margin-left: -10px;
@@ -233,6 +233,7 @@ input[type="checkbox"]
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 button a{
@@ -344,6 +345,14 @@ li a:hover{
     font-weight: bold;
     font-style: oblique;
     padding: 0 170px;
+}
+
+.about img{
+    width: 350px;
+    height: 350px;
+    margin-top: -260px;
+    margin-left: 250px;
+    position: absolute;
 }
 
 
