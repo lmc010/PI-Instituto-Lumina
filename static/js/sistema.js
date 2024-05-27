@@ -36,7 +36,7 @@ let data ={
         email:"MUDAR EMAIL",
         faleconosco:"FALE CONOSCO",
         graduacao:"SISTEMA DE GRADUAÇÃO",
-        sistemaDocente:"SISTEMA DOCENTE E",
+        sistemaDocente:"SISTEMA DOCENTE",
     },
     english:{
         
@@ -46,7 +46,7 @@ let data ={
         email:"CHANGE EMAIL",
         faleconosco:"CONTACT US",
         graduacao:"GRADUATION  SYSTEM",
-        sistemaDocente:"TEACHING STAFF SYSTEM AND",
+        sistemaDocente:"TEACHING STAFF SYSTEM",
     }
 }
 
