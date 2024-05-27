@@ -3,9 +3,11 @@ let langs = document.querySelector(".langs"),
     login = document.querySelector(".login")
     entrar = document.querySelector(".entrar")
     cadastro = document.querySelector(".p1")
+    identificacao = document.querySelector(".p2")
+    senha = document.querySelector(".p3")
     lumina = document.querySelector(".h1")
-    inputOne = document.querySelector(".inputIdentificacao")
-    inputTwo = document.querySelector(".inputSenha")
+    labelUsuario = document.querySelector(".labelUsuario")
+    labelSenha = document.querySelector(".labelSenha")
 
     link.forEach(el=>{
     el.addEventListener("click", ()=>{
@@ -18,8 +20,10 @@ let langs = document.querySelector(".langs"),
         entrar.textContent = data[attr].entrar
         cadastro.textContent = data[attr].cadastro
         lumina.textContent = data[attr].lumina
-        inputOne.textContent = data[attr].inputOne
-        inputTwo.textContent = data[attr].inputTwo
+        labelUsuario.textContent = data[attr].labelUsuario
+        labelSenha.textContent = data[attr].labelSenha
+        identificacao.textContent = data[attr].identificacao
+        senha.textContent = data[attr].senha
     })
 })
 
@@ -31,8 +35,10 @@ let data ={
         login:"Faça o Login Para Continuar",
         entrar:"ENTRAR",
         cadastro:"Fazer Cadastro",
-        inputOne:"Identification XXXXXX",
-        inputTwo:"Senha"
+        labelUsuario:"Identificação:",
+        labelSenha:"Senha:",
+        identificacao:"Esquçeu a Identificação?",
+        senha:"Esquçeu a Senha?",
     },
     english:{
         
@@ -40,7 +46,9 @@ let data ={
         login:"Log in to Continue",
         entrar:"ENTER",
         cadastro:"Sign up",
-        inputOne:"Identification XXXXXX",
-        inputTwo:"Password"
+        labelUsuario:"Identification:",
+        labelSenha:"Password:",
+        identificacao:"Forgot Identification?",
+        senha:"Forgot password?",
     }
 }

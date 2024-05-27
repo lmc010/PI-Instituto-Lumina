@@ -6,50 +6,6 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-
-
-.langs{
-    background: #ffffff;
-    text-align: center;
-    margin-left: 935px;  
-    margin-top: -154px;
-    width: 150px;
-}
-
-.langs button{
-    width: 130px;
-    height: 25px;
-    margin-left: -1px;
-    background-color: #003399;
-}
-
-
-.langs button a:hover{
-    color: rgb(70, 98, 240);
-    letter-spacing: 2px;
-    transform: scale(1.2);
-    transition: ease 1s;
-}
-
-.langs a{
-    color: #FFFF00;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: -15px;
-    font-size: 15px;
-}
-
-.active{
-    margin-top: -10px;
-}
-
-
-.langs .pt{
-    margin-left: -150px;
-}
-
-
-
 .logo{
     width: 300px;
     margin-top: 180px;
@@ -88,19 +44,38 @@ form h1{
    margin-left: 50px;
 }
 
-.user{
-    margin-left: 33px;
+.labelUsuario{
+    font-size: 15px;
+    margin-top: -25px;
+    margin-left: 50px;
+    position: absolute;
 }
 
+.inputSenha{
+    margin-top: 70px;
+}
+
+.user{
+    margin-left: 33px;
+    width: 17px;
+}
 
 .lock{
     margin-left: 35px;
+    margin-top: 10px;
+    width: 17px;
 }
 
 
+.labelSenha{
+    font-size: 15px;
+    margin-top: -15px;
+    margin-left: 50px;
+    position: absolute;
+}
+
 
 form input{
-    color: blue;
     border-top: none;
     border-left: none;
     border-right:none;
@@ -123,6 +98,7 @@ input::placeholder{
 button{
     background-color: #003399;
     color:#FFFF00;
+    margin-top: -30px;
     margin-left: 50px;
     font-size: 25px;
     width: 265px;
@@ -130,10 +106,9 @@ button{
     cursor: pointer;
 }
 
-.entrar a:hover{
+.entrar:hover{
     color: rgb(70, 98, 240);
     letter-spacing: 2px;
-    transform: scale(1.2);
     transition: ease 1s;
 }
 
@@ -147,17 +122,44 @@ form p:hover{
     cursor: pointer;
 }
 
-footer{
-    background-color: #D9D9D9;
-    border: none;
-    border-top: 2px solid black ;
-    height: 35px; 
-    margin-top: 48px;
-    position: absolute; 
+.langs{
+    background: #ffffff;
+    text-align: center;
+    margin-left: 935px;  
+    margin-top: -144px;
+    width: 150px;
 }
 
-footer p{
-    margin-top: -0.5px;
+.langs button{
+    width: 130px;
+    height: 25px;
+    margin-left: -1px;
+    background-color: #003399;
+}
+
+
+.langs button a:hover{
+    color: rgb(70, 98, 240);
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    transition: ease 1s;
+}
+
+.langs a{
+    color: #FFFF00;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -15px;
+    font-size: 15px;
+}
+
+.active{
+    margin-top: -10px;
+}
+
+
+.langs .pt{
+    margin-left: -150px;
 }
 
 .p1 {

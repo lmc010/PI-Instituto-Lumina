@@ -406,7 +406,16 @@ li a:hover{
     margin-left: 450px;
     font-size: 23px;
     margin-top: -20px;
- }
+}
+
+.labelName{
+    margin-left: 320px;
+    margin-top: -35px;
+    color: #000000;
+    font-weight: bold;
+    font-style: oblique;
+}
+
 
 .inputName{
     border: 2px solid #002162;
@@ -417,11 +426,12 @@ li a:hover{
 }
 
 
-.inputName::placeholder{
-    color: #848484;
+.labelEmail{
+    margin-left: 320px;
+    margin-top: -35px;
+    color: #000000;
     font-weight: bold;
     font-style: oblique;
-    padding-left: 20px;
 }
 
 .inputEmail{
@@ -432,13 +442,15 @@ li a:hover{
     margin-left: 360px;
 }
 
-.inputEmail::placeholder{
-    color: #848484;
+
+
+.labelAssunto{
+    margin-left: 320px;
+    margin-top: -35px;
+    color: #000000;
     font-weight: bold;
     font-style: oblique;
-    padding-left: 20px;
 }
-
 
 .inputAssunto{
     border: 2px solid #002162;
@@ -448,13 +460,14 @@ li a:hover{
     margin-left: 360px;
 }
 
-.inputAssunto::placeholder{
-    color: #848484;
+
+.labelMensagem{
+    margin-left: 320px;
+    margin-top: -35px;
+    color: #000000;
     font-weight: bold;
     font-style: oblique;
-    padding-left: 20px;
 }
-
 
 .inputMensagem{
     border: 2px solid #002162;
@@ -462,14 +475,6 @@ li a:hover{
     width: 500px;
     height: 100px;
     margin-left: 360px;
-}
-
-.inputMensagem::placeholder{
-    color: #848484;
-    font-weight: bold;
-    font-style: oblique;
-    padding-left: 20px;
-   
 }
 
 .sectionContato button{

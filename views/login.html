@@ -19,17 +19,15 @@
         <br>
         <br>
         <div>
-           <label for="usuario" >   
-              <img class="user" src="{{url_for('static', filename='imgs/Icon_User.svg')}}">   
-          </label>
-          <input type="usuario" id="usuario" placeholder="Identificação XXXXXX">    
+           <label class="labelUsuario"for="usuario">Identificação:</label>  
+           <img class="user" src="{{url_for('static', filename='imgs/Icon_User.svg')}}">   
+           <input class="inputUsuario"   type="usuario" id="usuario">    
         </div>
         <br>
         <div>
-           <label for="senha">
+           <label class="labelSenha" for="senha">Senha:</label>
                <img class="lock" src="{{url_for('static', filename='imgs/Icon_Lock.svg')}}">
-               <input  type="password" id="senha" placeholder="Senha">
-            </label>
+               <input type="password" id="senha">
         </div>
         <br>
         <br>

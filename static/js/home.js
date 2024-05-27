@@ -27,6 +27,11 @@ let langs = document.querySelector(".langs"),
             footerSix = document.querySelector( ".redes")
             footerSeven = document.querySelector( ".telefone")
             footerEight = document.querySelector( ".copyright")
+            labelName = document.querySelector( ".labelName")
+            labelEmail = document.querySelector( ".labelEmail")
+            labelAssunto = document.querySelector( ".labelAssunto")
+            labelMensagem = document.querySelector( ".labelMensagem")
+
         
             link.forEach(el=>{
             el.addEventListener("click", ()=>{
@@ -60,7 +65,11 @@ let langs = document.querySelector(".langs"),
                 contato.textContent = data[attr].contato
                 contatoTwo.textContent = data[attr].contatoTwo
                 contatoThree.textContent = data[attr].contatoThree
-                contatoFour.textContent = data[attr].contatoFour     
+                contatoFour.textContent = data[attr].contatoFour   
+                labelName.textContent = data[attr].labelName
+                labelEmail.textContent = data[attr].labelEmail   
+                labelAssunto.textContent = data[attr].labelAssunto   
+                labelMensagem.textContent = data[attr].labelMensagem   
             })
         })
         
@@ -85,15 +94,19 @@ let langs = document.querySelector(".langs"),
                 facilitador:"Somos um facilitador",
                 apresentacao:"O Instituto Lumina oferece cursos modernos nas áreas de programação, cibersegurança, e desenvolvimento de software. Contamos com docentes especializados e laboratórios de última geração. Nosso foco é proporcionar uma educação prática e alinhada às demandas do mercado. Venha fazer parte do futuro da tecnologia!",
                 funcionalidades:"Funcionalidades",
-                noticias: "Noticias",
-                eventos: "Eventos",
-                empresas: "Empresas",
+                noticias:"Noticias",
+                eventos:"Eventos",
+                empresas:"Empresas",
                 logout:"Fazer Logout",
                 contato:"Contato",
                 contatoTwo:"Contato",
                 contatoThree:"Se estiver com alguma duvida ou interesse comercial não",
                 contatoFour:"hesite em nos contatar.",
-                enviar:"Enviar",   
+                enviar:"Enviar",  
+                labelName:"Nome:",
+                labelEmail:"Email:",
+                labelAssunto:"Assunto:",
+                labelMensagem:"Mensagem:",
             },
             english:{
                 footer:"Want to know more?",
@@ -123,6 +136,10 @@ let langs = document.querySelector(".langs"),
                 contatoThree:"If you have any questions or business  interest, do not",
                 contatoFour:"hesitate to contact us.",
                 enviar:"Send",
+                labelName:"Name:",
+                labelEmail:"Email:",
+                labelAssunto:"Subject:",
+                labelMensagem:"Message:",
             }
         }
         
