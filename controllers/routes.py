@@ -7,7 +7,7 @@ def init_app(app):
 
   def home():
    
-    return render_template('home.html')
+    return render_template('landingPage.html')
   
   @app.route('/login')
   
@@ -21,17 +21,17 @@ def init_app(app):
 
     return render_template('sistema.html')
   
-  @app.route('/admin')
+  @app.route('/docente')
   
-  def admin():
+  def docente():
 
-    return render_template('admin.html')
+    return render_template('sistemaDocente.html')
   
-  @app.route('/aluno')
+  @app.route('/graduacao')
   
-  def aluno():
+  def graduacao():
 
-    return render_template('aluno.html')
+    return render_template('sistemaGraduacao.html')
   
   
   

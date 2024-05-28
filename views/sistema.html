@@ -24,11 +24,11 @@
        <ul>
           <li>
               <img src="{{url_for('static', filename='imgs/Icon_Home.svg')}}">
-              <a class="inicio" href="Login.html">INICIO</a>
+              <a class="inicio" href="{{url_for('home')}}">INICIO</a>
           </li>
           <li>
               <img src="{{url_for('static', filename='imgs/Icon_Key.svg')}}">
-              <a class="acesso" href="Perfil.html">SOLICITAR ACESSO</a>
+              <a class="acesso" href="#">SOLICITAR ACESSO</a>
           </li>
           <li>
               <img src="{{url_for('static', filename='imgs/Icon_Lock(2).svg')}}">
@@ -51,7 +51,7 @@
             <div class="sistema">
                 <img class="elipseOne" src="{{url_for('static', filename='imgs/Ellipse.svg')}}">
                 <img class="iconOne" src="{{url_for('static', filename='imgs/Frame.svg')}}">
-                <p class="graduacao">SISTEMA DE GRADUAÇÃO</p>
+                <p class="graduacao"><a href="{{url_for('graduacao')}}">SISTEMA DE GRADUAÇÃO</a></p>
              </div>                   
         </div>
 
@@ -59,7 +59,7 @@
             <div class="sistema">
                 <img class="elipseTwo" src="{{url_for('static', filename='imgs/Ellipse.svg')}}">
                 <img class="iconTwo" src="{{url_for('static', filename='imgs/Vector.svg')}}">
-                <p class="p2">SISTEMA DOCENTE</p>
+                <p class="p2"><a href="{{url_for('docente')}}">SISTEMA DOCENTE</a></p>
              </div>                  
         </div>
     <div>

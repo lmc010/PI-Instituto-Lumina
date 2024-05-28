@@ -106,7 +106,12 @@ button{
     cursor: pointer;
 }
 
-.entrar:hover{
+button a{
+    text-decoration: none;
+    color:#FFFF00 ;
+}
+
+a:hover{
     color: rgb(70, 98, 240);
     letter-spacing: 2px;
     transition: ease 1s;

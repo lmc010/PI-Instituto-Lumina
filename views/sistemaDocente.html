@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin.css')}}">
+    <title>Painel do Administrador</title>
+</head>
+<body>
+    <nav>
+     <div class="logo">
+        <img src="{{url_for('static', filename='imgs/logo.svg')}}">   
+     </div>
+    
+      <div class="langs">
+        <button><a href="#" language="portuguese" class="active">PT</a></button>
+        <button><a href="#" language="english" class="english">EN</a></button>
+     </div>  
+    </nav>
+
+    <div class="sidebarMenu">
+        <br>
+       <ul>
+          <li>
+              <img src="{{url_for('static', filename='imgs/Icon_Students.svg')}}">
+              <a class="alunos" href="#">GERENCIAR ALUNOS</a>
+          </li>
+          <li>
+              <img src="{{url_for('static', filename='imgs/Icon_Teacher.svg')}}">
+              <a class="professores" href="#">GERENCIAR PROFESSORES</a>
+          </li>
+          <li>
+              <img src="{{url_for('static', filename='imgs/Icon_Books.svg')}}">
+              <a class="disciplinas" href="#">GERENCIAR DISCPLINAS</a>
+          </li>
+          <li>
+            <img src="{{url_for('static', filename='imgs/Icon_Logout.svg')}}">
+            <a href="{{url_for('login')}}" class="logout">FAZER LOGOUT</a>
+        </li>
+    </div>
+    
+    <div class="adm">
+        <h3 class="bemvindo">Bem Vindo!!</h3>
+        <div>
+            <p class="ola">Olá Usuário</p>
+        </div>
+        <p class="frase">Você está conectado no módulo Sistema de Administração de Graduação</p>
+    </div>
+</body>
+
+     <script src="{{url_for('static', filename='js/admin.js')}}"></script>
+</html>
