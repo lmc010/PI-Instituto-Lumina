@@ -5,7 +5,7 @@ let langs = document.querySelector(".langs"),
     consultas = document.querySelector(".consultas")
     mensagens = document.querySelector(".mensagens")
     alterar = document.querySelector(".alterar")
-    retomar = document.querySelector(".retomar")
+    retornar = document.querySelector(".retornar")
     logout = document.querySelector(".logout")
     frase = document.querySelector(".frase")
     ola = document.querySelector(".ola")
@@ -22,7 +22,7 @@ let langs = document.querySelector(".langs"),
         consultas.textContent = data[attr].consultas
         mensagens.textContent = data[attr].mensagens
         alterar.textContent = data[attr].alterar
-        retomar.textContent = data[attr].retomar
+        retornar.textContent = data[attr].retornar
         logout.textContent = data[attr].logout
         frase.textContent = data[attr].frase
         ola.textContent = data[attr].ola
@@ -37,7 +37,7 @@ let data ={
         consultas: "CONSULTAS",
         mensagens: "MENSAGENS",
         alterar:"ALTERAR PERFIL",
-        retomar:"RETOMAR A LANDINPAGE",
+        retornar:"RETORNAR A LANDINPAGE",
         logout:"FAZER LOGOUT",
         frase:"Você está conectado no módulo Sistema de graduação",
         ola:"Olá Usuário",
@@ -48,7 +48,7 @@ let data ={
         consultas: "QUERIES",
         mensagens: "MESSAGE",
         alterar:"EDIT PROFILE",
-        retomar:"RETURN A LANDINPAGE",
+        retornar:"RETURN A LANDINPAGE",
         logout:"LOGOUT",
         frase:"You are logged in to the Grading System module",
         ola:"Hello User",

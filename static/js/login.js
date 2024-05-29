@@ -37,8 +37,8 @@ let data ={
         cadastro:"Fazer Cadastro",
         labelUsuario:"Usuario:",
         labelSenha:"Senha:",
-        identificacao:"Esquçeu o Usuario?",
-        senha:"Esquçeu a Senha?",
+        identificacao:"Esqueceu o Usuario?",
+        senha:"Esqueceu a Senha?",
     },
     english:{
         
