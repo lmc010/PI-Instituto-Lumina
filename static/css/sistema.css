@@ -108,6 +108,9 @@ a:hover{
 }
 
 
+.cards a{
+    text-decoration: none;
+}
 
 
 .cardOne{
@@ -164,7 +167,7 @@ p:hover{
     border-radius: 15px;
     width: 350px;
     height: 350px;
-    margin-top: -350px;
+    margin-top: -400px;
     margin-left: 800px;
 }
 
@@ -187,18 +190,10 @@ p:hover{
 }
 
 .p2{
-    margin-left: 70px;
+    margin-left: 100px;
     font-weight: bold;
-    margin-top: 85px;
+    margin-top: 70px;
     color:#003399 ;
     cursor:pointer;
-}
-
-.p2:hover{
-    text-decoration: underline;
-}
-
-.p2 a{
     text-decoration: none;
-    color: #003399;
 }

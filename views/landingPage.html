@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/landingPage.css')}}">
     <title>LandingPage</title>
 </head>
 <body>
@@ -13,7 +13,9 @@
                 <button class="itemOne">Vestibular</button>
                 <button class="itemTwo">Secretaria</button>
                 <button class="itemThree">Unidades</button>
-                <button class="itemFour"><a href="{{url_for('login')}}">Acessar</a></button> 
+                <a href="{{url_for('login')}}">
+                   <button class="itemFour">Acessar</button>
+                </a> 
             </div>
 
 
@@ -96,8 +98,8 @@
         <div>
           <h1 class="contatoh1">Contato</h1>
           <h2 class="contatoh2">Contato</h2>
-          <p class="contatop1">Se estiver com alguma duvida ou interesse comercial não </p>
-          <p class="p2">hesite em nos contatar.</p>
+          <p class="contatop1">Se estiver com alguma duvida ou interesse comercial, porfavor </p>
+          <p class="p2"> não hesite em nos contatar.</p>
         </div>
         <br>
         <div>
@@ -160,5 +162,5 @@
         </div>
     </footer>
 </body>
-<script src="{{url_for('static', filename='js/home.js')}}"></script>
+<script src="{{url_for('static', filename='js/landingPage.js')}}"></script>
 </html>

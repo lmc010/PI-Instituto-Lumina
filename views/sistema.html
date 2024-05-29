@@ -46,22 +46,26 @@
          
          
     </div>
-    <div class="cards">      
-        <div class="cardOne">
+    <div class="cards">
+        <a href="{{url_for('graduacao')}}">  
+         <div class="cardOne">
             <div class="sistema">
                 <img class="elipseOne" src="{{url_for('static', filename='imgs/Ellipse.svg')}}">
                 <img class="iconOne" src="{{url_for('static', filename='imgs/Frame.svg')}}">
-                <p class="graduacao"><a href="{{url_for('graduacao')}}">SISTEMA DE GRADUAÇÃO</a></p>
+                <p class="graduacao">SISTEMA DE GRADUAÇÃO</p>
              </div>                   
-        </div>
+         </div>
+        </a> 
 
-        <div class="cardTwo">
+       <a href="{{url_for('docente')}}">
+          <div class="cardTwo">
             <div class="sistema">
                 <img class="elipseTwo" src="{{url_for('static', filename='imgs/Ellipse.svg')}}">
                 <img class="iconTwo" src="{{url_for('static', filename='imgs/Vector.svg')}}">
-                <p class="p2"><a href="{{url_for('docente')}}">SISTEMA DOCENTE</a></p>
+                <p class="p2">SISTEMA DOCENTE</p>
              </div>                  
-        </div>
+          </div>
+        </a>
     <div>
 
         

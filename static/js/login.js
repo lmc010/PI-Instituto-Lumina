@@ -35,20 +35,20 @@ let data ={
         login:"Faça o Login Para Continuar",
         entrar:"ENTRAR",
         cadastro:"Fazer Cadastro",
-        labelUsuario:"Identificação:",
+        labelUsuario:"Usuario:",
         labelSenha:"Senha:",
-        identificacao:"Esquçeu a Identificação?",
+        identificacao:"Esquçeu o Usuario?",
         senha:"Esquçeu a Senha?",
     },
     english:{
         
         lumina: "Lumina Institute",
-        login:"Log in to Continue",
+        login:"Login to Continue",
         entrar:"ENTER",
         cadastro:"Sign up",
-        labelUsuario:"Identification:",
+        labelUsuario:"User:",
         labelSenha:"Password:",
-        identificacao:"Forgot Identification?",
+        identificacao:"Forgot User?",
         senha:"Forgot password?",
     }
 }
